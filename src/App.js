@@ -41,7 +41,7 @@ function App() {
       <section className="jumb">
         <div className="heroOverlay">
           <img src={imgHero} className="heroHidden" alt="Website development"></img>
-          <h2 className="card">
+          <h2 className="card font-size-menu">
             Quality website development!
           </h2>
         </div>

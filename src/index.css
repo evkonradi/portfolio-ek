@@ -7,10 +7,11 @@
 :root {
   --primary-color: #333333;
   --heading-color: #EBEBEB;
-  --footer-color: #BFBFBF;
+  --footer-color: #BFBFBF;  
+  --topline-color: #404040;
+  --accent-color: #009999;
 
   --background-color: #edeef6;
-  --accent-color: #009999;
   --gray-color: #425366;
   --white-color: #FFFFFF;
   --accent2-color: #E8E8E8;
@@ -48,7 +49,7 @@ a{
 
 /* header start*/
 header{
-  padding: 15px 0;
+  padding: 15px 10% 15px 10%;
   background-color: var(--heading-color);
   display: flex;
   justify-content: space-between;
@@ -58,10 +59,6 @@ header{
   position: sticky;
   top: 0;
   z-index: 9999;
-}
-
-header nav{
-  margin: 0 5%;
 }
 
 header nav ul {
@@ -75,7 +72,6 @@ header nav ul {
 header nav ul li span {
   padding: 10px 15px;
   font-weight: lighter;
-  font-size: 1.6vw;
   color: var(--primary-color);
   border-bottom: solid 3px var(--primary-color) ;
   margin-left: 10px;
@@ -95,7 +91,7 @@ header nav ul li span:hover{
 }
 
 .name-h1-container{
-  padding: 3px 15px 3px 5%;
+  padding: 3px 15px 3px 0;
   background-color: var(--accent2-color);
   display: flex;
   flex-direction: column;
@@ -105,11 +101,9 @@ header nav ul li span:hover{
 .name-h1-container a{
   color: var(--primary-color);
   font-weight: bold;
-  font-size: 2.2vw;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
-
 
 /* header end*/
 
@@ -138,17 +132,13 @@ header nav ul li span:hover{
   text-align: left;
   margin-bottom: 20px;
   width: 100%;
-  padding-left: 20px; 
   padding-right: 20px;
 }
 .section-left h2{
-  font-size: 2.0vw;
-  /* border-bottom: solid 3px var(--primary-color); */
   display: inline;
 }
 .section-right{
   width: 100%;
-  padding: 0 0px 0px 20px;
   align-self: stretch;
 }
 
@@ -160,6 +150,18 @@ header nav ul li span:hover{
 }
 .class-padding-right-20{
   padding-right: 20px;
+}
+.font-size-text{
+  font-size: 20px;
+}
+.font-size-menu{
+  font-size: 22px;
+}
+.font-size-heading{
+  font-size: 24px;
+}
+.font-size-name{
+  font-size: 30px;
 }
 /* all sections - common classes end */
 
@@ -177,8 +179,7 @@ header nav ul li span:hover{
 }
 
 .jumb h2{
-  margin-right: 5%;
-  font-size: 1.6vw;
+  margin-right: 10%;
 }
 
 .heroHidden{
@@ -200,7 +201,6 @@ header nav ul li span:hover{
 /* about me start */
 .about-me-p{
   line-height: 1.5;
-  font-size: 1.4vw;
   padding-bottom: 15px;
   text-align: justify;
 }
@@ -236,7 +236,7 @@ header nav ul li span:hover{
   grid-gap: 10px;
 }
 .work-grid-item{
-  border: solid 3px var(--accent-color);
+  border: solid 1px var(--footer-color);
   overflow: hidden;
   /* set width, height and padding-bottom to keep proportions of the item*/
   width: 100%; /* */
@@ -350,9 +350,7 @@ header nav ul li span:hover{
   padding: 5px 0;
 }
 .resumeDownload{
-  color: var(--heading-color);
-  font-style: italic;
-  font-size: 20px;
+  color: var(--accent-color);
 }
 /* end contact form */
 
@@ -381,24 +379,16 @@ footer{
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 1200px) {
-  .name-h1-container a{
-    font-size: 2.6vw;
-  }    
   .heroHidden{
     height: 45vh;
   }
-  .name-h1-container a{
-    font-size: 2.2vw;
-  }    
-  header nav ul li span, header nav ul li a, .jumb h2, .contact-me-flex a, .work-card-title{
-    font-size: 1.6vw;
-  }
-  .section-left h2{
-    font-size: 2.0vw;
-  }
-  .about-me-p{
-    font-size: 1.4vw;
+  header{
+    padding: 15px 5% 15px 5%;
   }  
+  .section-container{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -407,8 +397,6 @@ footer{
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      margin-left: 5%;
-      margin-right: 5%;
       }
   .section-right{
       width: 100%;
@@ -419,27 +407,24 @@ footer{
   .heroHidden{
     height: 40vh;
   }
-  .name-h1-container a{
-    font-size: 2.8vw;
-  }    
-  header nav ul li span, header nav ul li a, .jumb h2, .contact-me-flex a, .work-card-title{
-    font-size: 2.2vw;
+  .font-size-text{
+    font-size: 16px;
   }
-  .section-left h2{
-    font-size: 2.6vw;
+  .font-size-menu{
+    font-size: 18px;
   }
-  .about-me-p{
-    font-size: 2.0vw;
-  }  
+  .font-size-heading{
+    font-size: 20px;
+  }
+  .font-size-name{
+    font-size: 26px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   header {
       justify-content: center;
       position: relative;
-  }  
-  .name-h1-container{
-      padding: 3px 60px 3px 60px;
   }  
   header nav ul li a{
       padding-bottom: 5px;
@@ -453,12 +438,6 @@ footer{
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(4, 1fr);  
   }
-  .section-left h2{
-      font-size: 2.9vw;
-  }
-  .work-card-subtitle{
-      font-size: 1.8vw;
-  }
   .work-grid-item::after{
       display: none;
   }
@@ -468,19 +447,18 @@ footer{
   .heroHidden{
     height: 30vh;
   }
-  .name-h1-container a{
-    font-size: 3.4vw;
-  }    
-  header nav ul li span, header nav ul li a, .jumb h2, .contact-me-flex a, .work-card-title{
-    font-size: 2.8vw;
+  .font-size-text{
+    font-size: 14px;
   }
-  .section-left h2{
-    font-size: 3.2vw;
+  .font-size-menu{
+    font-size: 16px;
   }
-  .about-me-p{
-    font-size: 2.6vw;
+  .font-size-heading{
+    font-size: 18px;
   }
-
+  .font-size-name{
+    font-size: 24px;
+  }
      
 }
 

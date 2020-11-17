@@ -11,7 +11,7 @@ function Nav(props) {
 
     return (
         <header>
-            <h1 className="name-h1-container">
+            <h1 className="name-h1-container font-size-name">
                 <a href="/">Elena Konradi</a>
             </h1>
             <nav>
@@ -19,7 +19,7 @@ function Nav(props) {
                     {categories.map((category) => (
                         <li key={category.name}>
                                 <span onClick={() => setCurrentCategory(category) }
-                                    className={`${currentCategory.name === category.name && 'navActive' }`}>
+                                    className={`${currentCategory.name === category.name && 'navActive'} font-size-menu`}>
                                         {category.name}
                                 </span>
                         </li>
@@ -27,7 +27,6 @@ function Nav(props) {
                 </ul>
             </nav>
         </header>
-  
     );
 }
 
