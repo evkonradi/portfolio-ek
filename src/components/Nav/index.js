@@ -11,7 +11,7 @@ function Nav(props) {
 
     return (
         <header>
-            <h1 className="flex-h1-container">
+            <h1 className="name-h1-container">
                 <a href="/">Elena Konradi</a>
             </h1>
             <nav>

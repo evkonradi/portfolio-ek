@@ -5,10 +5,15 @@
 }
 
 :root {
-  --primary-color: #465671;
+  --primary-color: #333333;
+  --heading-color: #EBEBEB;
+  --footer-color: #BFBFBF;
+
   --background-color: #edeef6;
-  --accent-color: #9fc6cd;
-  --heading-color: #31343e;
+  --accent-color: #009999;
+  --gray-color: #425366;
+  --white-color: #FFFFFF;
+  --accent2-color: #E8E8E8;
   --error-color: rgb(228, 46, 1);
 }
 
@@ -71,37 +76,40 @@ header nav ul li span {
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.6vw;
-  color: var(--accent-color);
-  border-bottom: solid 3px var(--accent-color) ;
+  color: var(--primary-color);
+  border-bottom: solid 3px var(--primary-color) ;
   margin-left: 10px;
 }
 
 header nav ul li span:hover{
   background-color: var(--accent-color);
-  color: var(--heading-color);
+  border-bottom: solid 3px var(--accent-color) ;
+  color: var(--white-color);
 }
 
 .navActive{
   background-color: var(--accent-color);
-  color: var(--heading-color);
+  border-bottom: solid 3px var(--accent-color) ;
+  color: var(--white-color);
   font-weight: lighter; 
 }
 
-.flex-h1-container{
-  padding: 3px 15px 3px 100px;
-  background-color: var(--accent-color);
+.name-h1-container{
+  padding: 3px 15px 3px 5%;
+  background-color: var(--accent2-color);
   display: flex;
   flex-direction: column;
   text-align: right;
 }
 
-.flex-h1-container a{
-  color: var(--heading-color);
+.name-h1-container a{
+  color: var(--primary-color);
   font-weight: bold;
-  font-size: 2.5vw;
+  font-size: 2.2vw;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
+
 
 /* header end*/
 
@@ -115,9 +123,6 @@ header nav ul li span:hover{
 }
 .section-container{
   display: flex;
-  /* flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start; */
   margin-top: 30px;
 
   flex-direction: column;
@@ -129,11 +134,6 @@ header nav ul li span:hover{
 
 }
 .section-left{
-  /* text-align: right;
-  width: 15%;
-  padding-right: 20px;
-  align-self: stretch;
-  border-right: solid 3px var(--primary-color); */
   border-right: none;
   text-align: left;
   margin-bottom: 20px;
@@ -142,7 +142,7 @@ header nav ul li span:hover{
   padding-right: 20px;
 }
 .section-left h2{
-  font-size: 2.3vw;
+  font-size: 2.0vw;
   /* border-bottom: solid 3px var(--primary-color); */
   display: inline;
 }
@@ -151,26 +151,48 @@ header nav ul li span:hover{
   padding: 0 0px 0px 20px;
   align-self: stretch;
 }
+
+.class-float-left{
+  float: left;
+}
+.class-clear-both{
+  clear: both;
+}
+.class-padding-right-20{
+  padding-right: 20px;
+}
 /* all sections - common classes end */
 
 
 /* jumbotron start */
 .jumb{
-  background-image: url("./assets/banner-clouds.jpg");
-  background-size: cover;
-  background-position: 0% 0%;
-  height: 0;
+  /* background-image: url("./assets/banner-clouds.jpg"); */
+  background-image: url("./assets/hero.jpg");
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
   width: 100%;
-  min-height: 340px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: flex-end ;
+  /* height: auto; */
+  background-size: cover;
+  overflow: hidden;
 }
 
 .jumb h2{
   margin-right: 5%;
   font-size: 1.6vw;
+}
+
+.heroHidden{
+  visibility: hidden;
+  height: 48vh;
+}
+
+.heroOverlay{
+  background: rgba(0,0,0,0.2);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-end ;
 }
 /* jumbotron end */
 
@@ -178,8 +200,12 @@ header nav ul li span:hover{
 /* about me start */
 .about-me-p{
   line-height: 1.5;
-  font-size: 18px;
+  font-size: 1.4vw;
   padding-bottom: 15px;
+  text-align: justify;
+}
+.aboutMeImage{
+  width: 250px;
 }
 /* about me end */
 
@@ -333,16 +359,17 @@ header nav ul li span:hover{
 /* footer start*/
 footer{
   margin-top: 40px;
-  background-color: var(--heading-color);
+  background-color: var(--footer-color);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  padding: 20px;
 
   /* to put footer at the bottom of the page*/
   position: absolute; 
   left: 0 ; right: 0; bottom: 0; 
-  height:60px; 
+  height:80px; 
 }
 
 .icon-footer{
@@ -352,9 +379,29 @@ footer{
 }
 /* footer end*/
 
-
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1200px) {
+  .name-h1-container a{
+    font-size: 2.6vw;
+  }    
+  .heroHidden{
+    height: 45vh;
+  }
+  .name-h1-container a{
+    font-size: 2.2vw;
+  }    
+  header nav ul li span, header nav ul li a, .jumb h2, .contact-me-flex a, .work-card-title{
+    font-size: 1.6vw;
+  }
+  .section-left h2{
+    font-size: 2.0vw;
+  }
+  .about-me-p{
+    font-size: 1.4vw;
+  }  
+}
+
+@media screen and (max-width: 992px) {
   .section-container{
       flex-direction: column;
       flex-wrap: wrap;
@@ -363,24 +410,27 @@ footer{
       margin-left: 5%;
       margin-right: 5%;
       }
-  /* .section-left{
-      border-right: none;
-      text-align: center;
-      margin-bottom: 20px;
-      width: 100%;
-  }
-  .section-left h2{
-      border-bottom: solid 3px var(--primary-color);
-      padding-left: 60px;
-      padding-right: 60px;
-      display: inline;
-  } */
   .section-right{
       width: 100%;
   }
   .contact-me-flex a{
       border-bottom: none;
   }
+  .heroHidden{
+    height: 40vh;
+  }
+  .name-h1-container a{
+    font-size: 2.8vw;
+  }    
+  header nav ul li span, header nav ul li a, .jumb h2, .contact-me-flex a, .work-card-title{
+    font-size: 2.2vw;
+  }
+  .section-left h2{
+    font-size: 2.6vw;
+  }
+  .about-me-p{
+    font-size: 2.0vw;
+  }  
 }
 
 @media screen and (max-width: 768px) {
@@ -388,20 +438,16 @@ footer{
       justify-content: center;
       position: relative;
   }  
-  .flex-h1-container{
+  .name-h1-container{
       padding: 3px 60px 3px 60px;
   }  
-  .flex-h1-container a{
-      font-size: 3.4vw;
-  }    
-  header nav ul li a, .jumb h2, .contact-me-flex a, .work-card-title{
-      font-size: 2.0vw;
-  }
   header nav ul li a{
       padding-bottom: 5px;
   }
-  .jumb {
-      min-height: 250px;
+  header nav ul{
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
   }
   .work-grid{
       grid-template-columns: repeat(2, 1fr);
@@ -413,16 +459,28 @@ footer{
   .work-card-subtitle{
       font-size: 1.8vw;
   }
-  header nav ul{
-      margin-top: 20px;
-      width: 100%;
-      justify-content: center;
-  }
   .work-grid-item::after{
       display: none;
+  }
+  .aboutMeImage{
+    width: 150px;
+  }
+  .heroHidden{
+    height: 30vh;
+  }
+  .name-h1-container a{
+    font-size: 3.4vw;
   }    
+  header nav ul li span, header nav ul li a, .jumb h2, .contact-me-flex a, .work-card-title{
+    font-size: 2.8vw;
+  }
+  .section-left h2{
+    font-size: 3.2vw;
+  }
+  .about-me-p{
+    font-size: 2.6vw;
+  }
+
+     
 }
 
-@media screen and (max-width: 575px) {
-  
-}

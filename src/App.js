@@ -5,6 +5,7 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
+import imgHero from './assets/hero.jpg'
 
 function App() {
 
@@ -38,9 +39,12 @@ function App() {
         currentCategory={currentCategory}
       ></Nav>
       <section className="jumb">
-        <h2 className="card">
-          Quality website development!
-        </h2>
+        <div className="heroOverlay">
+          <img src={imgHero} className="heroHidden" alt="Website development"></img>
+          <h2 className="card">
+            Quality website development!
+          </h2>
+        </div>
       </section>
       <main>
         <div>{renderPage()}</div>
