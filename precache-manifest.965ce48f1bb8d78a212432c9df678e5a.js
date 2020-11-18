@@ -1,39 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a858413a3bdc06287703cbc2280e4737",
+    "revision": "5f2441dec3406e6879c789b8c3ef118a",
     "url": "/portfolio-ek/index.html"
   },
   {
-    "revision": "c9d63e9c830d3e9118d3",
-    "url": "/portfolio-ek/static/css/main.a55516f9.chunk.css"
+    "revision": "bce45fcd918c8713a142",
+    "url": "/portfolio-ek/static/css/main.5c3918d5.chunk.css"
   },
   {
-    "revision": "744525c82b1be3535492",
-    "url": "/portfolio-ek/static/js/2.54abe2c6.chunk.js"
+    "revision": "d2cd4799c3feb8e84429",
+    "url": "/portfolio-ek/static/js/2.b10e1369.chunk.js"
   },
   {
-    "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/portfolio-ek/static/js/2.54abe2c6.chunk.js.LICENSE.txt"
+    "revision": "c87550333da8df8ab4c80bd1d6e9defb",
+    "url": "/portfolio-ek/static/js/2.b10e1369.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c9d63e9c830d3e9118d3",
-    "url": "/portfolio-ek/static/js/main.337e18ba.chunk.js"
+    "revision": "bce45fcd918c8713a142",
+    "url": "/portfolio-ek/static/js/main.27c2e2d8.chunk.js"
   },
   {
     "revision": "de12be8ac7755d7941d5",
     "url": "/portfolio-ek/static/js/runtime-main.1c4c27e0.js"
   },
   {
-    "revision": "1c1fa89acf8b68cd92d1c5dc9f411e64",
-    "url": "/portfolio-ek/static/media/Resume_EK.1c1fa89a.pdf"
+    "revision": "442397f4a0a78ac363d7bd1edb815d28",
+    "url": "/portfolio-ek/static/media/AboutMe.442397f4.jpg"
+  },
+  {
+    "revision": "9dbfc2656728dcc359a5e4f126504f8b",
+    "url": "/portfolio-ek/static/media/Resume_ElenaKonradi.9dbfc265.pdf"
   },
   {
     "revision": "4d8b0842fcdd3d98daaeaffa338e9a7b",
     "url": "/portfolio-ek/static/media/badget-tracker.4d8b0842.jpg"
-  },
-  {
-    "revision": "baffd0b21c1607969864af65d6bdaea3",
-    "url": "/portfolio-ek/static/media/banner-clouds.baffd0b2.jpg"
   },
   {
     "revision": "0d8e45d26e5709c97f543a47c8c14aaf",
@@ -50,6 +50,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fd17c9abf0e3bb2a2fac70528670d417",
     "url": "/portfolio-ek/static/media/github.fd17c9ab.png"
+  },
+  {
+    "revision": "9bc165663bd3dd9a418931e35315396f",
+    "url": "/portfolio-ek/static/media/hero.9bc16566.jpg"
   },
   {
     "revision": "6262972254e9ee3e158ab17049d22ad6",
