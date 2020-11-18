@@ -5,6 +5,9 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
+import imgHero from './assets/hero.jpg';
+import './index.css';
+
 
 function App() {
 
@@ -31,16 +34,19 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="font-main">
       <Nav
         categories={categories}
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
       ></Nav>
       <section className="jumb">
-        <h2 className="card">
-          Quality website development!
-        </h2>
+        <div className="heroOverlay">
+          <img src={imgHero} className="heroHidden" alt="Website development"></img>
+          <h2 className="card font-size-menu">
+            Quality website development!
+          </h2>
+        </div>
       </section>
       <main>
         <div>{renderPage()}</div>
