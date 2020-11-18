@@ -50,8 +50,8 @@ function Portfolio() {
     return (
         <section id="projects" className="section-container">
             <div className="section-left">
-                <h2>Portfolio</h2>
-                <p className="about-me-p">
+                <h2 className="font-size-heading">Portfolio</h2>
+                <p className="about-me-p font-size-text">
                     <br></br>
                     Below I introduce some of my projects. Please click the links for each project to proceed to the GitHub repository and deployed application.
                     <br></br>

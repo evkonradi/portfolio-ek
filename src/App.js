@@ -5,7 +5,9 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
-import imgHero from './assets/hero.jpg'
+import imgHero from './assets/hero.jpg';
+import './index.css';
+
 
 function App() {
 
@@ -32,7 +34,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="font-main">
       <Nav
         categories={categories}
         setCurrentCategory={setCurrentCategory}

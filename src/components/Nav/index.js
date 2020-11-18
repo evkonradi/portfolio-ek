@@ -1,4 +1,12 @@
 import React from "react";
+import { IconButton } from "@chakra-ui/react"
+import {
+    Menu,
+    MenuButton,
+    MenuList,
+    MenuItem,
+  } from "@chakra-ui/react";
+  import { HamburgerIcon } from '@chakra-ui/icons'
 
 function Nav(props) {
 
@@ -15,7 +23,7 @@ function Nav(props) {
                 <a href="/">Elena Konradi</a>
             </h1>
             <nav>
-                <ul>
+                <ul className="visibilityMenu">
                     {categories.map((category) => (
                         <li key={category.name}>
                                 <span onClick={() => setCurrentCategory(category) }
@@ -25,6 +33,26 @@ function Nav(props) {
                         </li>
                     ))}
                 </ul>
+                <div className="visibilityMobileMenu">
+                    <Menu>
+                        <MenuButton as={IconButton} 
+                            transition="all 0.2s"
+                            backgroundColor="#EBEBEB"
+                            _hover={{ bg: "#009999" }}
+                            _expanded={{ bg: "#009999" }}
+                            _focus={{ outline: 0 }}
+                        >
+                            <HamburgerIcon></HamburgerIcon>
+                        </MenuButton>
+                        <MenuList>
+                            {categories.map((category) => (
+                                <MenuItem key={category.name} onClick={() => setCurrentCategory(category) }>
+                                                {category.name}
+                                </MenuItem>
+                            ))}
+                        </MenuList>
+                    </Menu>
+                </div>
             </nav>
         </header>
     );

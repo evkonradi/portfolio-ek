@@ -10,10 +10,10 @@
   --footer-color: #BFBFBF;  
   --topline-color: #404040;
   --accent-color: #009999;
+  --white-color: #FFFFFF;
 
   --background-color: #edeef6;
   --gray-color: #425366;
-  --white-color: #FFFFFF;
   --accent2-color: #E8E8E8;
   --error-color: rgb(228, 46, 1);
 }
@@ -40,6 +40,10 @@ html{
 code {
   /*font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;*/
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.font-main{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -92,7 +96,7 @@ header nav ul li span:hover{
 
 .name-h1-container{
   padding: 3px 15px 3px 0;
-  background-color: var(--accent2-color);
+  background-color: var(--heading-color);
   display: flex;
   flex-direction: column;
   text-align: right;
@@ -104,6 +108,12 @@ header nav ul li span:hover{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
+.visibilityMobileMenu{
+  display: none;
+}
+.visibilityMenu{
+  display: flex;
+}
 
 /* header end*/
 
@@ -112,7 +122,7 @@ header nav ul li span:hover{
 .card{
   padding: 10px;
   background-color: var(--accent-color);
-  color: var(--heading-color);
+  color: var(--white-color);
   margin-bottom: 20px;
 }
 .section-container{
@@ -136,6 +146,8 @@ header nav ul li span:hover{
 }
 .section-left h2{
   display: inline;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
 }
 .section-right{
   width: 100%;
@@ -211,18 +223,6 @@ header nav ul li span:hover{
 
 
 /* Contact me start*/
-.contact-me-flex{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-.contact-me-flex a{
-  font-size: 1.5vw;
-  color: var(--heading-color);
-  padding-left: 2px;
-  border-bottom: solid 3px var(--heading-color);
-}
 /* Contact me end*/
 
 
@@ -295,14 +295,14 @@ header nav ul li span:hover{
   z-index: 2;
 }
 .work-card-title{
-  font-size: 1.3vw;
+  font-size: 18px;
   font-weight: bold;
 }
 .work-card-subtitle{
-  font-size: 0.8vw;
+  font-size: 16px;
 }
 .work-card-link{
-  color: var(--primary-color);
+  color: var(--white-color);
 }
 /* Work section end */ 
 
@@ -389,6 +389,12 @@ footer{
     margin-left: 5%;
     margin-right: 5%;
   }
+  .visibilityMobileMenu{
+    display: none;
+  }
+  .visibilityMenu{
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -400,9 +406,6 @@ footer{
       }
   .section-right{
       width: 100%;
-  }
-  .contact-me-flex a{
-      border-bottom: none;
   }
   .heroHidden{
     height: 40vh;
@@ -419,10 +422,16 @@ footer{
   .font-size-name{
     font-size: 26px;
   }
+  .visibilityMobileMenu{
+    display: none;
+  }
+  .visibilityMenu{
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  header {
+  /* header {
       justify-content: center;
       position: relative;
   }  
@@ -433,7 +442,7 @@ footer{
     margin-top: 20px;
     width: 100%;
     justify-content: center;
-  }
+  } */
   .work-grid{
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(4, 1fr);  
@@ -459,6 +468,13 @@ footer{
   .font-size-name{
     font-size: 24px;
   }
+  .visibilityMobileMenu{
+    display: inline;
+  }
+  .visibilityMenu{
+    display: none;
+  }
+  
      
 }
 

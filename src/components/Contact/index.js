@@ -38,29 +38,22 @@ function Contact() {
     return (
         <section className="section-container">
             <div className="section-left">
-                <h2>Contact me</h2>
+                <h2 className="font-size-heading">Contact me</h2>
             </div>     
             <div className="section-right">
-                <form id="contact-form" onSubmit={handleSubmit}>
-                    <div className="form-group">
-                        <label htmlFor="name" className="about-me-p label">Name:</label><br></br>
-                        <input type="text" name="name"  className="input" defaultValue={name} onBlur={handleChange}/>
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="email" className="about-me-p label">Email address:</label><br></br>
-                        <input type="email" name="email" className="input" defaultValue={email} onBlur={handleChange} placeholder="email@example.com"/>
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="message" className="about-me-p label">Message:</label><br></br>
-                        <textarea name="message" rows="5" className="textarea" defaultValue={message} onBlur={handleChange} />
-                    </div>
-                    {errorMessage && (
-                        <div>
-                            <p className="error-text">{errorMessage}</p>
-                        </div>
-                    )}
-                    <button type="submit" className="button">Submit</button>
-                </form>
+                <p className="about-me-p font-size-text">
+                        Elena Konradi
+                </p>
+                <p className="about-me-p font-size-text">
+                        Email: evkonradi@gmail.com
+                </p>
+                <p className="about-me-p font-size-text">
+                        Phone: (512)423-4516
+                </p>
+                <p className="about-me-p font-size-text">
+                        Location: Austin, TX
+                </p>
+
             </div>       
 
         </section>
