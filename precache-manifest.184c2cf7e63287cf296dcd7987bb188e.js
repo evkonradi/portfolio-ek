@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5f2441dec3406e6879c789b8c3ef118a",
+    "revision": "cf83f8ffa4ddae149bbfa9b46fa4fae4",
     "url": "/portfolio-ek/index.html"
   },
   {
-    "revision": "bce45fcd918c8713a142",
-    "url": "/portfolio-ek/static/css/main.5c3918d5.chunk.css"
+    "revision": "b24765ff4083dbb505a5",
+    "url": "/portfolio-ek/static/css/main.34808aae.chunk.css"
   },
   {
-    "revision": "d2cd4799c3feb8e84429",
-    "url": "/portfolio-ek/static/js/2.b10e1369.chunk.js"
+    "revision": "6a02895784f55b94b745",
+    "url": "/portfolio-ek/static/js/2.bdc191da.chunk.js"
   },
   {
     "revision": "c87550333da8df8ab4c80bd1d6e9defb",
-    "url": "/portfolio-ek/static/js/2.b10e1369.chunk.js.LICENSE.txt"
+    "url": "/portfolio-ek/static/js/2.bdc191da.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bce45fcd918c8713a142",
-    "url": "/portfolio-ek/static/js/main.27c2e2d8.chunk.js"
+    "revision": "b24765ff4083dbb505a5",
+    "url": "/portfolio-ek/static/js/main.01249abd.chunk.js"
   },
   {
     "revision": "de12be8ac7755d7941d5",
@@ -32,12 +32,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio-ek/static/media/Resume_ElenaKonradi.9dbfc265.pdf"
   },
   {
-    "revision": "4d8b0842fcdd3d98daaeaffa338e9a7b",
-    "url": "/portfolio-ek/static/media/badget-tracker.4d8b0842.jpg"
+    "revision": "8f4827449b5ad6115414963b04650cb5",
+    "url": "/portfolio-ek/static/media/badget-tracker.8f482744.jpg"
   },
   {
-    "revision": "0d8e45d26e5709c97f543a47c8c14aaf",
-    "url": "/portfolio-ek/static/media/cardsocial.0d8e45d2.png"
+    "revision": "9fb8501269f64abb360d0d3118004dfe",
+    "url": "/portfolio-ek/static/media/cardsocial.9fb85012.jpg"
   },
   {
     "revision": "faef2c3c8c4a7483a2ac789a464a0557",
@@ -60,12 +60,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio-ek/static/media/linkedin.62629722.png"
   },
   {
-    "revision": "2d3b7908a4cec7379a856a0daf10339f",
-    "url": "/portfolio-ek/static/media/rentzsite.2d3b7908.jpg"
+    "revision": "6f069912466008f086c9a56826c32b11",
+    "url": "/portfolio-ek/static/media/rentzsite.6f069912.jpg"
   },
   {
-    "revision": "ae2057c1011c2042dfa0a3a8822ac112",
-    "url": "/portfolio-ek/static/media/teach-me-to.ae2057c1.jpg"
+    "revision": "7364108e603ba469b98564fcbbc5dd6f",
+    "url": "/portfolio-ek/static/media/shop-redux.7364108e.jpg"
+  },
+  {
+    "revision": "ec0db23e273598ba30557c29cff942a8",
+    "url": "/portfolio-ek/static/media/teach-me-to.ec0db23e.jpg"
   },
   {
     "revision": "231a12094d6e4d0effd697b91dc58ecc",
