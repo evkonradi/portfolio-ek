@@ -171,6 +171,30 @@ header nav ul li span:hover{
 .font-size-name{
   font-size: 30px;
 }
+.font-size-card{
+  font-size: 18px;
+}
+
+.button-style{
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: var(--heading-color);
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px rgba(7, 7, 7, 0.6);
+}
+.button-style:hover {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+.button-style:focus {
+  outline: none;
+}
+.project-title-bg{
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  padding: 5px 10px;
+}
 /* all sections - common classes end */
 
 
@@ -321,6 +345,7 @@ header nav ul li span:hover{
 .work-grid-item-img{
   margin:auto;
 }
+
 /* Work section end */ 
 
 
@@ -441,6 +466,9 @@ footer{
   .font-size-name{
     font-size: 26px;
   }
+  .font-size-card{
+    font-size: 14px;
+  }
   .visibilityMobileMenu{
     display: none;
   }
@@ -463,11 +491,11 @@ footer{
     justify-content: center;
   } */
   .work-grid{
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(4, 1fr);  
+      grid-template-columns: repeat(1, 1fr);
   }
-  .work-grid-item::after{
-      display: none;
+  .work-grid-item{
+      padding-left: 50px;
+      padding-right: 50px;
   }
   .aboutMeImage{
     width: 150px;
@@ -486,6 +514,9 @@ footer{
   }
   .font-size-name{
     font-size: 24px;
+  }
+  .font-size-card{
+    font-size: 14px;
   }
   .visibilityMobileMenu{
     display: inline;
