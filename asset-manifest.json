@@ -1,26 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio-ek/static/css/main.34808aae.chunk.css",
-    "main.js": "/portfolio-ek/static/js/main.01249abd.chunk.js",
-    "main.js.map": "/portfolio-ek/static/js/main.01249abd.chunk.js.map",
+    "main.css": "/portfolio-ek/static/css/main.7206471e.chunk.css",
+    "main.js": "/portfolio-ek/static/js/main.78270541.chunk.js",
+    "main.js.map": "/portfolio-ek/static/js/main.78270541.chunk.js.map",
     "runtime-main.js": "/portfolio-ek/static/js/runtime-main.1c4c27e0.js",
     "runtime-main.js.map": "/portfolio-ek/static/js/runtime-main.1c4c27e0.js.map",
-    "static/js/2.bdc191da.chunk.js": "/portfolio-ek/static/js/2.bdc191da.chunk.js",
-    "static/js/2.bdc191da.chunk.js.map": "/portfolio-ek/static/js/2.bdc191da.chunk.js.map",
+    "static/js/2.3e867a42.chunk.js": "/portfolio-ek/static/js/2.3e867a42.chunk.js",
+    "static/js/2.3e867a42.chunk.js.map": "/portfolio-ek/static/js/2.3e867a42.chunk.js.map",
     "index.html": "/portfolio-ek/index.html",
-    "precache-manifest.184c2cf7e63287cf296dcd7987bb188e.js": "/portfolio-ek/precache-manifest.184c2cf7e63287cf296dcd7987bb188e.js",
+    "precache-manifest.670bc3d1197e20a63daf392224f6849b.js": "/portfolio-ek/precache-manifest.670bc3d1197e20a63daf392224f6849b.js",
     "service-worker.js": "/portfolio-ek/service-worker.js",
-    "static/css/main.34808aae.chunk.css.map": "/portfolio-ek/static/css/main.34808aae.chunk.css.map",
-    "static/js/2.bdc191da.chunk.js.LICENSE.txt": "/portfolio-ek/static/js/2.bdc191da.chunk.js.LICENSE.txt",
+    "static/css/main.7206471e.chunk.css.map": "/portfolio-ek/static/css/main.7206471e.chunk.css.map",
+    "static/js/2.3e867a42.chunk.js.LICENSE.txt": "/portfolio-ek/static/js/2.3e867a42.chunk.js.LICENSE.txt",
     "static/media/AboutMe.jpg": "/portfolio-ek/static/media/AboutMe.442397f4.jpg",
     "static/media/Resume_ElenaKonradi.pdf": "/portfolio-ek/static/media/Resume_ElenaKonradi.9dbfc265.pdf",
     "static/media/badget-tracker.jpg": "/portfolio-ek/static/media/badget-tracker.8f482744.jpg",
     "static/media/cardsocial.jpg": "/portfolio-ek/static/media/cardsocial.9fb85012.jpg",
     "static/media/e-commerce-APIs.jpg": "/portfolio-ek/static/media/e-commerce-APIs.faef2c3c.jpg",
-    "static/media/email.png": "/portfolio-ek/static/media/email.baf57047.png",
-    "static/media/github.png": "/portfolio-ek/static/media/github.fd17c9ab.png",
     "static/media/hero.jpg": "/portfolio-ek/static/media/hero.9bc16566.jpg",
-    "static/media/linkedin.png": "/portfolio-ek/static/media/linkedin.62629722.png",
     "static/media/rentzsite.jpg": "/portfolio-ek/static/media/rentzsite.6f069912.jpg",
     "static/media/shop-redux.jpg": "/portfolio-ek/static/media/shop-redux.7364108e.jpg",
     "static/media/teach-me-to.jpg": "/portfolio-ek/static/media/teach-me-to.ec0db23e.jpg",
@@ -29,8 +26,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.1c4c27e0.js",
-    "static/js/2.bdc191da.chunk.js",
-    "static/css/main.34808aae.chunk.css",
-    "static/js/main.01249abd.chunk.js"
+    "static/js/2.3e867a42.chunk.js",
+    "static/css/main.7206471e.chunk.css",
+    "static/js/main.78270541.chunk.js"
   ]
 }
