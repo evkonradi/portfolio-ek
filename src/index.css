@@ -8,10 +8,9 @@
   --primary-color: #333333;
   --heading-color: #EBEBEB;
   --footer-color: #BFBFBF;  
-  --topline-color: #404040;
+  /* --footer-color: #33AAAA;   */
   --accent-color: #009999;
   --white-color: #FFFFFF;
-  --error-color: rgb(228, 46, 1);
 }
 
 body {
@@ -131,6 +130,7 @@ header nav ul li span:hover{
   align-items: center;
   margin-left: 10%;
   margin-right: 10%;
+  margin-bottom: 40px;
 
 }
 .section-left{
@@ -245,88 +245,6 @@ header nav ul li span:hover{
 /* Contact me start*/
 /* Contact me end*/
 
-
-/* Work section start */ 
-/* .work-grid{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  justify-items: left;
-  align-items: stretch;
-  grid-gap: 50px;
-} */
-/* .work-grid-item{
-  border: solid 1px var(--footer-color);
-  overflow: hidden; */
-  /* set width, height and padding-bottom to keep proportions of the item*/
-  /* width: 100%; 
-  height: 0;
-  padding-bottom: 50%;
-  background-size: cover;
-  position: relative;
-} */
-/* .work-grid-item-1{
-  grid-column: 1/span 2;
-  grid-row: 1/span 2;
-  background-image: url("./assets/projects/teach-me-to.jpg");
-}
-.work-grid-item-2{
-  background-image: url("./assets/projects/cardsocial.png");
-}
-.work-grid-item-3{
-  background-image: url("./assets/projects/rentzsite.jpg");
-}
-.work-grid-item-4{
-  background-image: url("./assets/projects/badget-tracker.jpg");
-}
-.work-grid-item-5{
-  background-image: url("./assets/projects/tech-blog.jpg");
-}
-.work-grid-item-6{
-  background-image: url("./assets/projects/e-commerce-APIs.jpg");
-}
-.work-grid-item-7{
-  background-image: url("./assets/projects/weather-dashboard.jpg");
-}
-.work-grid-item::after{
-  content: "";
-  height: 100%;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.5);
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 1;
-  transition: 2s;
-  z-index: 1;
-}
-.work-grid-item:hover::after{
-  opacity: 0;
-}
-
-.work-card-flex{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  position: absolute;
-  bottom: 20px;
-  z-index: 2;
-}
-.work-card-title{
-  font-size: 18px;
-  font-weight: bold;
-}
-.work-card-subtitle{
-  font-size: 16px;
-}
-.work-card-link{
-  color: var(--white-color);
-} */
-/* Work section end */ 
-
-
 /* Work section start */ 
 .work-grid{
   display: grid;
@@ -400,25 +318,30 @@ header nav ul li span:hover{
 
 /* footer start*/
 footer{
-  margin-top: 40px;
   background-color: var(--footer-color);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  flex-direction: column;
   padding: 20px;
 
   /* to put footer at the bottom of the page*/
   position: absolute; 
   left: 0 ; right: 0; bottom: 0; 
-  height:80px; 
 }
 
 .icon-footer{
-  height: 40px;
+  height: 30px;
   margin-left: 20px;
   margin-right: 20px;
+  display: inline;
 }
+.copyright{
+  font-size: 14px;
+  padding-top: 5px;
+}
+
 /* footer end*/
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
