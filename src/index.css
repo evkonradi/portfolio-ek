@@ -135,7 +135,7 @@ header nav ul li span:hover{
 }
 .section-left{
   border-right: none;
-  text-align: left;
+  text-align: center;
   margin-bottom: 20px;
   width: 100%;
   padding-right: 20px;
@@ -148,6 +148,7 @@ header nav ul li span:hover{
 .section-right{
   width: 100%;
   align-self: stretch;
+  text-align: center;
 }
 
 .class-float-left{
@@ -245,7 +246,7 @@ header nav ul li span:hover{
 /* Contact me start*/
 /* Contact me end*/
 
-/* Work section start */ 
+/* Projects section start */ 
 .work-grid{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -257,48 +258,23 @@ header nav ul li span:hover{
 .work-grid-item{
   border: solid 1px var(--heading-color);
   border-radius: 8px;
-  padding: 20px;
+  padding: 10px;
   overflow: hidden;
 }
 .work-grid-item-img{
   margin:auto;
 }
-
-/* Work section end */ 
+.padding-card{
+  padding-top: 20px;
+}
+/* Projects section end */ 
 
 
 
 /* contact form */
-.error-text{
-  color: var(--error-color);
-}
 .label{
   color: var(--primary-color);
   padding-bottom: 0px;
-}
-.input{
-  color: var(--primary-color);
-  width: 400px;
-  height: 40px;
-}
-.textarea{
-  color: var(--primary-color);
-  width: 400px;
-  height: 140px;
-}
-.button {
-  margin-top: 20px;
-  background-color: var(--accent-color);
-  border: none;
-  color: var(--heading-color);
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 24px;
-  width: 200px;
-}
-.button:hover{
-  cursor: pointer;
 }
 .h3-resume{
   font-size: 20px;
@@ -313,8 +289,47 @@ header nav ul li span:hover{
 }
 .resumeDownload{
   color: var(--accent-color);
+  font-weight: bold;
 }
 /* end contact form */
+
+/* what I Do start */
+.grid-skills{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;  
+  
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0 0 40px 0;
+}
+.grid-skill{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;  
+  align-items: center;
+}
+.grid-skill-1{
+  grid-column: 1 / 2;
+  text-align: center;
+}
+.grid-skill-2{
+  grid-column: 2 / 4;
+  text-align: center;
+}
+.skill-icon{
+  width: 60px;
+  display: inline;
+}
+.skill-heading{
+  font-weight: bold;
+  background-color: var(--heading-color);
+}
+.p-resume{
+  line-height: 1.5;
+  padding-bottom: 40px;
+}
+/* what I Do end */
 
 /* footer start*/
 footer{

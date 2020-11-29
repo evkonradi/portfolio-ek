@@ -8,7 +8,7 @@ function About() {
 
         <section id="about-me" className="section-container">
             <div className="section-left">
-                <h2 className="font-size-heading">About Me</h2>
+                <h2 className="font-size-name">About Me</h2>
             </div>
             <div className="section-right">
                 <div className="class-float-left class-padding-right-20">

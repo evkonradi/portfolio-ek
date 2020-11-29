@@ -86,8 +86,8 @@ function Portfolio() {
     return (
         <section id="projects" className="section-container">
             <div className="section-left">
-                <h2 className="font-size-heading">Portfolio</h2>
-                <p className="about-me-p font-size-text">
+                <h2 className="font-size-name">Projects</h2>
+                <p className="font-size-text">
                     <br></br>
                     Below I introduce some of my projects. Please click the links for each project to proceed to the GitHub repository and deployed application.
                     <br></br>
@@ -99,7 +99,7 @@ function Portfolio() {
                             <img src={project.fileName} alt={project.title} className="work-grid-item-img"></img>
                             <br></br>
                             <p className="font-size-text"><span className="project-title-bg">{project.title}</span></p>
-                            <p className="font-size-card">{project.desc}</p>
+                            <p className="font-size-card padding-card">{project.desc}</p>
                             <p className="font-size-card">{project.technology}</p>
                             <br></br>
                             <button className="button-style font-size-card" data-link={project.githubLink} onClick={btnClicked}>GitHub</button>&nbsp;&nbsp;&nbsp;&nbsp;

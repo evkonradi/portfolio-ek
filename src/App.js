@@ -13,20 +13,20 @@ function App() {
 
   const [categories] = useState([
     { name: 'About Me', href: 'about-me' },
-    { name: 'Portfolio', href: 'portfolio'},
-    { name: 'Contact', href: 'contact' },
-    { name: 'Resume' , href: 'resume'}
+    { name: 'What I Do' , href: 'resume'},
+    { name: 'Projects', href: 'portfolio'},
+    { name: 'Contact', href: 'contact' }
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   const renderPage = () =>{
     switch (currentCategory.name) {
-      case 'Portfolio' : 
+      case 'Projects' : 
         return <Portfolio />;
       case 'Contact' : 
         return <Contact />;
-      case 'Resume' : 
+      case 'What I Do' : 
         return <Resume />;
       default:
         return <About />;
