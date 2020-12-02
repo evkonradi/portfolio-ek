@@ -6,6 +6,7 @@ import iconNode from '../../assets/node.png';
 import iconGraph from '../../assets/graphQL.png';
 import iconGitHub from '../../assets/github1.png';
 import iconCSS from '../../assets/css.png';
+import {Element} from "react-scroll";
 
 function Resume() {
 
@@ -46,6 +47,8 @@ function Resume() {
 
     return (
         <section className="section-container">
+            <Element name="scrollToExpertise"></Element>
+
             <div className="section-left">
                 <h2 className="font-size-name">My Expertise</h2>
             </div>     
@@ -70,7 +73,7 @@ function Resume() {
                 </ul>                    
 
                 <p className="p-resume font-size-text">
-                    Download my <a href={resumePDF} target="_blank" rel="noopener noreferrer" className='resumeDownload font-size-text'>Resume</a> here.
+                    Download my <a href={resumePDF} target="_blank" rel="noopener noreferrer" className='resumeDownload font-size-text'>RESUME</a> here.
                 </p>
 
             </div>       

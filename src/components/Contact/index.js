@@ -1,10 +1,13 @@
 import React from "react";
+import {Element} from "react-scroll";
 
 function Contact() {
 
 
     return (
         <section className="section-container">
+            <Element name="scrollToContact"></Element>
+
             <div className="section-left">
                 <h2 className="font-size-name">Contact me</h2>
             </div>     
@@ -21,7 +24,10 @@ function Contact() {
                 <p>
                         Location: Austin, TX
                 </p>
-
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
             </div>       
 
         </section>

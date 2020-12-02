@@ -8,6 +8,8 @@ import imgCommerceAPI from '../../assets/projects/e-commerce-APIs.jpg';
 import imgWeather from '../../assets/projects/weather-dashboard.jpg';
 import imgShopRedux from '../../assets/projects/shop-redux.jpg';
 
+import {Element} from "react-scroll";
+
 function Portfolio() {
 
     const [projects] = useState([
@@ -85,6 +87,8 @@ function Portfolio() {
 
     return (
         <section id="projects" className="section-container">
+            <Element name="scrollToProjects"></Element>
+
             <div className="section-left">
                 <h2 className="font-size-name">Projects</h2>
                 <p className="font-size-text">

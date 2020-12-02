@@ -1,12 +1,13 @@
 import React from "react";
-import { IconButton } from "@chakra-ui/react"
+import { IconButton } from "@chakra-ui/react";
 import {
     Menu,
     MenuButton,
     MenuList,
     MenuItem,
   } from "@chakra-ui/react";
-  import { HamburgerIcon } from '@chakra-ui/icons'
+import { HamburgerIcon } from "@chakra-ui/icons";
+import {scrollToPageSection} from "../../utils/helpers";
 
 function Nav(props) {
 
@@ -15,7 +16,6 @@ function Nav(props) {
         setCurrentCategory,
         currentCategory
     } = props;
-
 
     return (
         <header>
@@ -26,7 +26,7 @@ function Nav(props) {
                 <ul className="visibilityMenu">
                     {categories.map((category) => (
                         <li key={category.name}>
-                                <span onClick={() => setCurrentCategory(category) }
+                                <span onClick={(event) => {setCurrentCategory(category); scrollToPageSection(event, category.href); }}
                                     className={`${currentCategory.name === category.name && 'navActive'} font-size-menu`}>
                                         {category.name}
                                 </span>
@@ -42,11 +42,11 @@ function Nav(props) {
                             _expanded={{ bg: "#009999" }}
                             _focus={{ outline: 0 }}
                         >
-                            <HamburgerIcon></HamburgerIcon>
+                        <HamburgerIcon></HamburgerIcon>
                         </MenuButton>
                         <MenuList>
                             {categories.map((category) => (
-                                <MenuItem key={category.name} onClick={() => setCurrentCategory(category) }>
+                                <MenuItem key={category.name} onClick={(event) => {setCurrentCategory(category); scrollToPageSection(event, category.href); }}>
                                                 {category.name}
                                 </MenuItem>
                             ))}

@@ -49,15 +49,16 @@ a{
 /* header start*/
 header{
   padding: 15px 10% 15px 10%;
-  background-color: var(--heading-color);
+  background-color: var(--white-color);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 0px;
   z-index: 9999;
+  box-shadow: 0px 2px 8px 4px rgba(129, 129, 129, 0.3);
 }
 
 header nav ul {
@@ -91,7 +92,7 @@ header nav ul li span:hover{
 
 .name-h1-container{
   padding: 3px 15px 3px 0;
-  background-color: var(--heading-color);
+  background-color: var(--white-color);
   display: flex;
   flex-direction: column;
   text-align: right;
@@ -111,6 +112,65 @@ header nav ul li span:hover{
 }
 
 /* header end*/
+
+/* jumbotron start */
+.jumb{
+  background-image: url("./assets/hero.jpg");
+  background-position: 20% 0%;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+  height: 88vh;
+}
+
+.jumb h2{
+  text-align: center;
+  padding: 0 100px;
+}
+
+.heroHidden{
+  visibility: hidden;
+  height: 88vh;
+}
+
+.heroOverlay{
+  background: rgba(0,0,0,0.2);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center ;
+}
+.divHero{
+  position: absolute;
+  color: var(--white-color);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+.font-size-hero{
+  font-size: 70px;
+}
+.font-size-sub-hero{
+  font-size: 30px;
+  text-align: center;
+  padding: 0 100px;
+}
+.button-hero-wrapper{
+  text-align: center;
+  padding-top: 60px;
+}
+.button-hero{
+  background-color: var(--accent-color);
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(7, 7, 7, 0.6);
+}
+.button-hero:hover{
+  cursor: pointer;
+}
+/* jumbotron end */
 
 
 /* all sections - common classes start */
@@ -175,7 +235,6 @@ header nav ul li span:hover{
 .font-size-card{
   font-size: 18px;
 }
-
 .button-style{
   padding-left: 10px;
   padding-right: 10px;
@@ -197,38 +256,6 @@ header nav ul li span:hover{
   padding: 5px 10px;
 }
 /* all sections - common classes end */
-
-
-/* jumbotron start */
-.jumb{
-  /* background-image: url("./assets/banner-clouds.jpg"); */
-  background-image: url("./assets/hero.jpg");
-  background-position: 50% 0%;
-  background-repeat: no-repeat;
-  width: 100%;
-  /* height: auto; */
-  background-size: cover;
-  overflow: hidden;
-}
-
-.jumb h2{
-  margin-right: 10%;
-}
-
-.heroHidden{
-  visibility: hidden;
-  height: 48vh;
-}
-
-.heroOverlay{
-  background: rgba(0,0,0,0.2);
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: flex-end ;
-}
-/* jumbotron end */
 
 
 /* about me start */
@@ -339,7 +366,7 @@ footer{
   flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
-  padding: 20px;
+  padding: 40px 20px;
 
   /* to put footer at the bottom of the page*/
   position: absolute; 
@@ -354,16 +381,16 @@ footer{
 }
 .copyright{
   font-size: 14px;
-  padding-top: 5px;
+  padding-top: 15px;
 }
 
 /* footer end*/
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 1200px) {
-  .heroHidden{
+  /* .heroHidden{
     height: 45vh;
-  }
+  } */
   header{
     padding: 15px 5% 15px 5%;
   }  
@@ -377,6 +404,9 @@ footer{
   .visibilityMenu{
     display: flex;
   }
+  .font-size-hero{
+    font-size: 60px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -385,18 +415,15 @@ footer{
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      }
+  }
   .section-right{
       width: 100%;
-  }
-  .heroHidden{
-    height: 40vh;
   }
   .font-size-text{
     font-size: 16px;
   }
   .font-size-menu{
-    font-size: 18px;
+    font-size: 16px;
   }
   .font-size-heading{
     font-size: 20px;
@@ -413,21 +440,15 @@ footer{
   .visibilityMenu{
     display: flex;
   }
+  .font-size-hero{
+    font-size: 55px;
+  }
+  .font-size-sub-hero{
+    font-size: 25px;
+  }  
 }
 
 @media screen and (max-width: 768px) {
-  /* header {
-      justify-content: center;
-      position: relative;
-  }  
-  header nav ul li a{
-      padding-bottom: 5px;
-  }
-  header nav ul{
-    margin-top: 20px;
-    width: 100%;
-    justify-content: center;
-  } */
   .work-grid{
       grid-template-columns: repeat(1, 1fr);
   }
@@ -435,11 +456,11 @@ footer{
       padding-left: 50px;
       padding-right: 50px;
   }
+  .grid-skills{
+    grid-template-columns: repeat(2, 1fr);
+  }
   .aboutMeImage{
     width: 150px;
-  }
-  .heroHidden{
-    height: 30vh;
   }
   .font-size-text{
     font-size: 14px;
@@ -462,7 +483,28 @@ footer{
   .visibilityMenu{
     display: none;
   }
-  
-     
+  .font-size-hero{
+    font-size: 50px;
+  }
+  .font-size-sub-hero{
+    font-size: 22px;
+  }  
 }
+@media screen and (max-width: 576px) {
+  .font-size-hero{
+    font-size: 40px;
+  }
+  .font-size-sub-hero{
+    font-size: 18px;
+  }  
+  .grid-skills{
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .grid-skill-1{
+    text-align: left;
+  }
+}
+
 
