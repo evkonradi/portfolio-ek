@@ -1,6 +1,7 @@
 import React from "react";
 import imgAboutMe from '../../assets/AboutMe.jpg';
 import {Element} from "react-scroll";
+import { Divider } from "@chakra-ui/react"
 
 function About() {
 
@@ -40,6 +41,11 @@ function About() {
                 </div>
             </div>
             <div className="class-clear-both"></div>
+
+            <div className="divider-wrapper">
+                <div className="divider-line"><Divider /></div>
+            </div>
+
         </section>
     );
 }

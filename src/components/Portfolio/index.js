@@ -7,8 +7,8 @@ import imgTectBlog from '../../assets/projects/tech-blog.jpg';
 import imgCommerceAPI from '../../assets/projects/e-commerce-APIs.jpg';
 import imgWeather from '../../assets/projects/weather-dashboard.jpg';
 import imgShopRedux from '../../assets/projects/shop-redux.jpg';
-
 import {Element} from "react-scroll";
+import { Divider } from "@chakra-ui/react";
 
 function Portfolio() {
 
@@ -110,6 +110,9 @@ function Portfolio() {
                             <button className="button-style font-size-card" data-link={project.deployedLink} onClick={btnClicked}>Deployed</button>
                         </article>
             ))}
+            </div>
+            <div className="divider-wrapper">
+                <div className="divider-line"><Divider /></div>
             </div>
 
         </section>

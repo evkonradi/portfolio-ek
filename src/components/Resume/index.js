@@ -7,6 +7,7 @@ import iconGraph from '../../assets/graphQL.png';
 import iconGitHub from '../../assets/github1.png';
 import iconCSS from '../../assets/css.png';
 import {Element} from "react-scroll";
+import { Divider } from "@chakra-ui/react"
 
 function Resume() {
 
@@ -55,7 +56,7 @@ function Resume() {
 
             <div className="section-right">
                 <p className="p-resume font-size-text">
-                        Below are some technologies I am familiar with.
+                        Below are some technologies I am familiar with.<br></br><br></br>
                 </p>
 
                 <ul className='grid-skills'>
@@ -76,7 +77,11 @@ function Resume() {
                     Download my <a href={resumePDF} target="_blank" rel="noopener noreferrer" className='resumeDownload font-size-text'>RESUME</a> here.
                 </p>
 
-            </div>       
+            </div>   
+            
+            <div className="divider-wrapper">
+                <div className="divider-line"><Divider /></div>
+            </div>
 
         </section>
     )

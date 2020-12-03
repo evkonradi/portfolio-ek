@@ -6,7 +6,7 @@
 
 :root {
   --primary-color: #333333;
-  --heading-color: #EBEBEB;
+  --light-gray-color: #EBEBEB;
   --footer-color: #BFBFBF;  
   /* --footer-color: #33AAAA;   */
   --accent-color: #009999;
@@ -182,7 +182,7 @@ header nav ul li span:hover{
 }
 .section-container{
   display: flex;
-  margin-top: 30px;
+  margin-top: 40px;
 
   flex-direction: column;
   flex-wrap: wrap;
@@ -238,7 +238,7 @@ header nav ul li span:hover{
 .button-style{
   padding-left: 10px;
   padding-right: 10px;
-  background-color: var(--heading-color);
+  background-color: var(--light-gray-color);
   text-align: center;
   border-radius: 5px;
   box-shadow: 2px 2px 3px rgba(7, 7, 7, 0.6);
@@ -255,6 +255,15 @@ header nav ul li span:hover{
   color: var(--white-color);
   padding: 5px 10px;
 }
+.divider-wrapper{
+  width: 100%;
+}
+.divider-line{
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 45px;
+}
 /* all sections - common classes end */
 
 
@@ -270,9 +279,6 @@ header nav ul li span:hover{
 /* about me end */
 
 
-/* Contact me start*/
-/* Contact me end*/
-
 /* Projects section start */ 
 .work-grid{
   display: grid;
@@ -283,7 +289,7 @@ header nav ul li span:hover{
   text-align: center;
 }
 .work-grid-item{
-  border: solid 1px var(--heading-color);
+  border: solid 1px var(--light-gray-color);
   border-radius: 8px;
   padding: 10px;
   overflow: hidden;
@@ -297,28 +303,13 @@ header nav ul li span:hover{
 /* Projects section end */ 
 
 
-
 /* contact form */
-.label{
-  color: var(--primary-color);
-  padding-bottom: 0px;
-}
-.h3-resume{
-  font-size: 20px;
-}
-
-.ul-resume{
-  padding-left: 40px;
-  margin-bottom: 20px;
-}
-.ul-resume li{
-  padding: 5px 0;
-}
 .resumeDownload{
   color: var(--accent-color);
   font-weight: bold;
 }
 /* end contact form */
+
 
 /* what I Do start */
 .grid-skills{
@@ -350,11 +341,10 @@ header nav ul li span:hover{
 }
 .skill-heading{
   font-weight: bold;
-  background-color: var(--heading-color);
+  background-color: var(--light-gray-color);
 }
 .p-resume{
   line-height: 1.5;
-  padding-bottom: 40px;
 }
 /* what I Do end */
 
