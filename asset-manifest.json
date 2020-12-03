@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio-ek/static/css/main.9f67dad1.chunk.css",
-    "main.js": "/portfolio-ek/static/js/main.e31fe073.chunk.js",
-    "main.js.map": "/portfolio-ek/static/js/main.e31fe073.chunk.js.map",
+    "main.css": "/portfolio-ek/static/css/main.11f297f8.chunk.css",
+    "main.js": "/portfolio-ek/static/js/main.4e2e19aa.chunk.js",
+    "main.js.map": "/portfolio-ek/static/js/main.4e2e19aa.chunk.js.map",
     "runtime-main.js": "/portfolio-ek/static/js/runtime-main.1c4c27e0.js",
     "runtime-main.js.map": "/portfolio-ek/static/js/runtime-main.1c4c27e0.js.map",
     "static/js/2.4a73f080.chunk.js": "/portfolio-ek/static/js/2.4a73f080.chunk.js",
     "static/js/2.4a73f080.chunk.js.map": "/portfolio-ek/static/js/2.4a73f080.chunk.js.map",
     "index.html": "/portfolio-ek/index.html",
-    "precache-manifest.959b5435f1f529f579039f41ee1771a7.js": "/portfolio-ek/precache-manifest.959b5435f1f529f579039f41ee1771a7.js",
+    "precache-manifest.e412638a70f1f4901e92433eda2e99c7.js": "/portfolio-ek/precache-manifest.e412638a70f1f4901e92433eda2e99c7.js",
     "service-worker.js": "/portfolio-ek/service-worker.js",
-    "static/css/main.9f67dad1.chunk.css.map": "/portfolio-ek/static/css/main.9f67dad1.chunk.css.map",
+    "static/css/main.11f297f8.chunk.css.map": "/portfolio-ek/static/css/main.11f297f8.chunk.css.map",
     "static/js/2.4a73f080.chunk.js.LICENSE.txt": "/portfolio-ek/static/js/2.4a73f080.chunk.js.LICENSE.txt",
     "static/media/AboutMe.jpg": "/portfolio-ek/static/media/AboutMe.442397f4.jpg",
     "static/media/Resume_ElenaKonradi.pdf": "/portfolio-ek/static/media/Resume_ElenaKonradi.9dbfc265.pdf",
     "static/media/badget-tracker.jpg": "/portfolio-ek/static/media/badget-tracker.8f482744.jpg",
     "static/media/cardsocial.jpg": "/portfolio-ek/static/media/cardsocial.9fb85012.jpg",
     "static/media/e-commerce-APIs.jpg": "/portfolio-ek/static/media/e-commerce-APIs.faef2c3c.jpg",
-    "static/media/hero.jpg": "/portfolio-ek/static/media/hero.9bc16566.jpg",
+    "static/media/hero2.jpg": "/portfolio-ek/static/media/hero2.bd80b5a3.jpg",
     "static/media/rentzsite.jpg": "/portfolio-ek/static/media/rentzsite.6f069912.jpg",
     "static/media/shop-redux.jpg": "/portfolio-ek/static/media/shop-redux.7364108e.jpg",
     "static/media/teach-me-to.jpg": "/portfolio-ek/static/media/teach-me-to.ec0db23e.jpg",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.1c4c27e0.js",
     "static/js/2.4a73f080.chunk.js",
-    "static/css/main.9f67dad1.chunk.css",
-    "static/js/main.e31fe073.chunk.js"
+    "static/css/main.11f297f8.chunk.css",
+    "static/js/main.4e2e19aa.chunk.js"
   ]
 }
