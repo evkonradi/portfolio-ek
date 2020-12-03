@@ -115,8 +115,8 @@ header nav ul li span:hover{
 
 /* jumbotron start */
 .jumb{
-  background-image: url("./assets/hero.jpg");
-  background-position: 20% 0%;
+  background-image: url("./assets/hero2.jpg");
+  background-position: 0% 0%;
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
@@ -155,7 +155,7 @@ header nav ul li span:hover{
 .font-size-sub-hero{
   font-size: 30px;
   text-align: center;
-  padding: 0 100px;
+  padding: 30px 100px;
 }
 .button-hero-wrapper{
   text-align: center;
@@ -163,7 +163,7 @@ header nav ul li span:hover{
 }
 .button-hero{
   background-color: var(--accent-color);
-  padding: 10px 15px;
+  padding: 15px 20px;
   border-radius: 5px;
   box-shadow: 2px 2px 5px rgba(7, 7, 7, 0.6);
 }
@@ -388,9 +388,9 @@ footer{
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 1200px) {
-  /* .heroHidden{
-    height: 45vh;
-  } */
+  .jumb{
+    background-position: 50% 0%;
+  }
   header{
     padding: 15px 5% 15px 5%;
   }  
@@ -423,7 +423,7 @@ footer{
     font-size: 16px;
   }
   .font-size-menu{
-    font-size: 16px;
+    font-size: 18px;
   }
   .font-size-heading{
     font-size: 20px;
@@ -435,10 +435,10 @@ footer{
     font-size: 14px;
   }
   .visibilityMobileMenu{
-    display: none;
+    display: inline;
   }
   .visibilityMenu{
-    display: flex;
+    display: none;
   }
   .font-size-hero{
     font-size: 55px;

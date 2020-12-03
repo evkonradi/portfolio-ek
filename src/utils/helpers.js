@@ -16,6 +16,6 @@ export function scrollToPageSection(event, scrollTo){
       duration: 1500,
       delay: 100,
       smooth: true,
-      offset: -110
+      offset: -100
   });
 };

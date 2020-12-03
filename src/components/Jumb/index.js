@@ -1,5 +1,5 @@
 import React from "react";
-import imgHero from "../../assets/hero.jpg";
+import imgHero from "../../assets/hero2.jpg";
 import {scrollToPageSection} from "../../utils/helpers";
 import {Element} from "react-scroll";
 
@@ -18,7 +18,7 @@ function Jumb(){
               DEVELOPMENT
             </h2>
             <div className="font-size-sub-hero">
-              I love to create data-driven applications and processes
+              <span>I love to create data-driven applications and processes</span>
             </div>
             <div className="button-hero-wrapper font-size-menu">
               <span className="button-hero" onClick={(event)=>{
