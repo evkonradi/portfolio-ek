@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "009e561fef41ab2da5a8aa1f90bd497f",
+    "revision": "2a4dd12cedda5279bc68523e56a67d89",
     "url": "/portfolio-ek/index.html"
   },
   {
-    "revision": "be62e08aa0a453a0233e",
-    "url": "/portfolio-ek/static/css/main.17cb768c.chunk.css"
+    "revision": "96032cddf6292031576c",
+    "url": "/portfolio-ek/static/css/main.c705831f.chunk.css"
   },
   {
     "revision": "b3b6f2587f2bcbc7a563",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio-ek/static/js/2.4a73f080.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "be62e08aa0a453a0233e",
-    "url": "/portfolio-ek/static/js/main.a6622b7e.chunk.js"
+    "revision": "96032cddf6292031576c",
+    "url": "/portfolio-ek/static/js/main.051dea95.chunk.js"
   },
   {
     "revision": "de12be8ac7755d7941d5",
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio-ek/static/media/AboutMe.442397f4.jpg"
   },
   {
-    "revision": "9dbfc2656728dcc359a5e4f126504f8b",
-    "url": "/portfolio-ek/static/media/Resume_ElenaKonradi.9dbfc265.pdf"
+    "revision": "6ce0b5ecd6b3c840863328234498bd7c",
+    "url": "/portfolio-ek/static/media/Resume_ElenaKonradi.6ce0b5ec.pdf"
   },
   {
     "revision": "8f4827449b5ad6115414963b04650cb5",

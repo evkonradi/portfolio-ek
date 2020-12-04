@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio-ek/static/css/main.17cb768c.chunk.css",
-    "main.js": "/portfolio-ek/static/js/main.a6622b7e.chunk.js",
-    "main.js.map": "/portfolio-ek/static/js/main.a6622b7e.chunk.js.map",
+    "main.css": "/portfolio-ek/static/css/main.c705831f.chunk.css",
+    "main.js": "/portfolio-ek/static/js/main.051dea95.chunk.js",
+    "main.js.map": "/portfolio-ek/static/js/main.051dea95.chunk.js.map",
     "runtime-main.js": "/portfolio-ek/static/js/runtime-main.1c4c27e0.js",
     "runtime-main.js.map": "/portfolio-ek/static/js/runtime-main.1c4c27e0.js.map",
     "static/js/2.4a73f080.chunk.js": "/portfolio-ek/static/js/2.4a73f080.chunk.js",
     "static/js/2.4a73f080.chunk.js.map": "/portfolio-ek/static/js/2.4a73f080.chunk.js.map",
     "index.html": "/portfolio-ek/index.html",
-    "precache-manifest.700efa4c85da6ec3db3669f8cea79036.js": "/portfolio-ek/precache-manifest.700efa4c85da6ec3db3669f8cea79036.js",
+    "precache-manifest.c85528cfe04f5977bf66a128c65f4ed9.js": "/portfolio-ek/precache-manifest.c85528cfe04f5977bf66a128c65f4ed9.js",
     "service-worker.js": "/portfolio-ek/service-worker.js",
-    "static/css/main.17cb768c.chunk.css.map": "/portfolio-ek/static/css/main.17cb768c.chunk.css.map",
+    "static/css/main.c705831f.chunk.css.map": "/portfolio-ek/static/css/main.c705831f.chunk.css.map",
     "static/js/2.4a73f080.chunk.js.LICENSE.txt": "/portfolio-ek/static/js/2.4a73f080.chunk.js.LICENSE.txt",
     "static/media/AboutMe.jpg": "/portfolio-ek/static/media/AboutMe.442397f4.jpg",
-    "static/media/Resume_ElenaKonradi.pdf": "/portfolio-ek/static/media/Resume_ElenaKonradi.9dbfc265.pdf",
+    "static/media/Resume_ElenaKonradi.pdf": "/portfolio-ek/static/media/Resume_ElenaKonradi.6ce0b5ec.pdf",
     "static/media/badget-tracker.jpg": "/portfolio-ek/static/media/badget-tracker.8f482744.jpg",
     "static/media/cardsocial.jpg": "/portfolio-ek/static/media/cardsocial.9fb85012.jpg",
     "static/media/e-commerce-APIs.jpg": "/portfolio-ek/static/media/e-commerce-APIs.faef2c3c.jpg",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.1c4c27e0.js",
     "static/js/2.4a73f080.chunk.js",
-    "static/css/main.17cb768c.chunk.css",
-    "static/js/main.a6622b7e.chunk.js"
+    "static/css/main.c705831f.chunk.css",
+    "static/js/main.051dea95.chunk.js"
   ]
 }
