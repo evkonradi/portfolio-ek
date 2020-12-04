@@ -7,7 +7,7 @@ import iconGraph from '../../assets/graphQL.png';
 import iconGitHub from '../../assets/github1.png';
 import iconCSS from '../../assets/css.png';
 import {Element} from "react-scroll";
-import { Divider } from "@chakra-ui/react"
+// import { Divider } from "@chakra-ui/react"
 
 function Resume() {
 
@@ -47,11 +47,12 @@ function Resume() {
     // const backEnd = ['MERN stack','APIs','Node', 'Express','MySQL, Sequelze','MongoDB, Mongoose','REST','GraphQL','SQL Server','Oracle','ASP.NET','C#'];
 
     return (
-        <section className="section-container">
+        <section className="section-container-bg">
+        <div className="section-container">
             <Element name="scrollToExpertise"></Element>
 
             <div className="section-left">
-                <h2 className="font-size-name">My Expertise</h2>
+                <h2 className="font-size-heading">My Expertise</h2>
             </div>     
 
             <div className="section-right">
@@ -79,10 +80,11 @@ function Resume() {
 
             </div>   
             
-            <div className="divider-wrapper">
+            {/* <div className="divider-wrapper">
                 <div className="divider-line"><Divider /></div>
-            </div>
+            </div> */}
 
+        </div>
         </section>
     )
 }

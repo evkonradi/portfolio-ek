@@ -1,17 +1,19 @@
 import React from "react";
 import imgAboutMe from '../../assets/AboutMe.jpg';
 import {Element} from "react-scroll";
-import { Divider } from "@chakra-ui/react"
+// import { Divider } from "@chakra-ui/react"
 
 function About() {
 
     return (
 
-        <section id="about-me" className="section-container">
+        <section id="about-me" className="section-container-bg">
+       
+        <div className="section-container">
             <Element name="scrollToAbout"></Element>
 
             <div className="section-left">
-                <h2 className="font-size-name">About Me</h2>
+                <h2 className="font-size-heading">About Me</h2>
             </div>
             <div className="section-right">
                 <div className="class-float-left class-padding-right-20">
@@ -42,10 +44,11 @@ function About() {
             </div>
             <div className="class-clear-both"></div>
 
-            <div className="divider-wrapper">
+            {/* <div className="divider-wrapper">
                 <div className="divider-line"><Divider /></div>
-            </div>
+            </div> */}
 
+        </div>
         </section>
     );
 }

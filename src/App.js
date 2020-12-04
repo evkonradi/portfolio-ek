@@ -42,16 +42,12 @@ function App() {
         currentCategory={currentCategory}
       ></Nav>
       <Jubm></Jubm>
-      <main>
-        {/* <div>{renderPage()}</div> */}
-        <div>
-          <Resume></Resume>
-          <Portfolio></Portfolio>
-          <About></About>
-          <Contact></Contact>
-        </div>
-      </main>
+      <Resume></Resume>
+      <Portfolio></Portfolio>
+      <About></About>
+      <Contact></Contact>
       <Footer></Footer>
+      {/* <div>{renderPage()}</div> */}
    </div>
     
   );

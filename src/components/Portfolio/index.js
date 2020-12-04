@@ -8,7 +8,7 @@ import imgCommerceAPI from '../../assets/projects/e-commerce-APIs.jpg';
 import imgWeather from '../../assets/projects/weather-dashboard.jpg';
 import imgShopRedux from '../../assets/projects/shop-redux.jpg';
 import {Element} from "react-scroll";
-import { Divider } from "@chakra-ui/react";
+// import { Divider } from "@chakra-ui/react";
 
 function Portfolio() {
 
@@ -86,35 +86,37 @@ function Portfolio() {
     }
 
     return (
-        <section id="projects" className="section-container">
-            <Element name="scrollToProjects"></Element>
+        <section id="projects" className="section-container-bg section-container-bg-tilt">
+            <div  className="section-container">
+                <Element name="scrollToProjects"></Element>
 
-            <div className="section-left">
-                <h2 className="font-size-name">Projects</h2>
-                <p className="font-size-text">
-                    <br></br>
-                    Below I introduce some of my projects. Please click the links for each project to proceed to the GitHub repository and deployed application.
-                    <br></br>
-            </p>
-            </div>
-            <div className="section-right work-grid">
-                {projects.map((project, i) => (
-                        <article key={project.title} className={`work-grid-item work-grid-item-${i+2}`}>
-                            <img src={project.fileName} alt={project.title} className="work-grid-item-img"></img>
-                            <br></br>
-                            <p className="font-size-text"><span className="project-title-bg">{project.title}</span></p>
-                            <p className="font-size-card padding-card">{project.desc}</p>
-                            <p className="font-size-card">{project.technology}</p>
-                            <br></br>
-                            <button className="button-style font-size-card" data-link={project.githubLink} onClick={btnClicked}>GitHub</button>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <button className="button-style font-size-card" data-link={project.deployedLink} onClick={btnClicked}>Deployed</button>
-                        </article>
-            ))}
-            </div>
-            <div className="divider-wrapper">
-                <div className="divider-line"><Divider /></div>
-            </div>
+                <div className="section-left">
+                    <h2 className="font-size-heading">Projects</h2>
+                    <p className="font-size-text">
+                        <br></br>
+                        Below I introduce some of my projects. Please click the links for each project to proceed to the GitHub repository and deployed application.
+                        <br></br>
+                </p>
+                </div>
+                <div className="section-right work-grid">
+                    {projects.map((project, i) => (
+                            <article key={project.title} className={`work-grid-item work-grid-item-${i+2}`}>
+                                <img src={project.fileName} alt={project.title} className="work-grid-item-img"></img>
+                                <br></br>
+                                <p className="font-size-text"><span className="project-title-bg">{project.title}</span></p>
+                                <p className="font-size-card padding-card">{project.desc}</p>
+                                <p className="font-size-card">{project.technology}</p>
+                                <br></br>
+                                <button className="button-style font-size-card" data-link={project.githubLink} onClick={btnClicked}>GitHub</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <button className="button-style font-size-card" data-link={project.deployedLink} onClick={btnClicked}>Deployed</button>
+                            </article>
+                ))}
+                </div>
+                {/* <div className="divider-wrapper">
+                    <div className="divider-line"><Divider /></div>
+                </div> */}
 
+            </div>
         </section>
     )
 }
