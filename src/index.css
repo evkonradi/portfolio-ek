@@ -447,6 +447,9 @@ footer{
   .font-size-sub-hero{
     font-size: 25px;
   }  
+  .copyright{
+    font-size: 14px;
+  } 
 }
 
 @media screen and (max-width: 768px) {
@@ -489,7 +492,10 @@ footer{
   }
   .font-size-sub-hero{
     font-size: 22px;
-  }  
+  } 
+  .copyright{
+    font-size: 12px;
+  } 
 }
 @media screen and (max-width: 576px) {
   .font-size-hero{
